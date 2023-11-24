@@ -1,0 +1,25 @@
+// Variáveis
+$cor-de-fundo: #333;
+$cor-texto: #fff;
+$altura: 60px;
+
+// Estilo do footer
+footer {
+  background-color: $cor-de-fundo;
+  color: $cor-texto;
+  height: $altura;
+  text-align: center;
+  padding: 20px; // Ajuste conforme necessário
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+// Estilo dos links no footer
+footer a {
+  color: $cor-texto;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}

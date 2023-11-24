@@ -1,0 +1,66 @@
+// Defina suas variáveis aqui, se necessário
+$cor-primaria: #3498db;
+$cor-secundaria: #2ecc71;
+$cor-fundo: #f2f2f2;
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: $cor-fundo;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: $cor-primaria;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+
+  h1 {
+    margin: 0;
+  }
+
+  nav {
+    margin-top: 10px;
+
+    a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    color: $cor-primaria;
+  }
+
+  p {
+    line-height: 1.6;
+  }
+}
+
+#BemVindo {
+    text-align: center;
+}
+
+.footer {
+  background-color: $cor-primaria;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

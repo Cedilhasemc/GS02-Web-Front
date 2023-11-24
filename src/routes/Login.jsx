@@ -48,13 +48,13 @@ function Login() {
 
         if (user) {
           sessionStorage.setItem('usuarioLogado', JSON.stringify(user));
-          setMsgstatus('Login realizado com SUCESSO!!');
+          setMsgstatus('Acesso realizado com Sucesso, redirecionando...');
 
           setTimeout(() => {
             window.location = '/';
           }, 3000);
         } else {
-          setMsgstatus('Usuário e ou Senha incorretos!');
+          setMsgstatus('Usuário e ou Senha incorretos, por favor, digite novamente');
           setTimeout(() => {
             setMsgstatus('');
             setUsuarios({
@@ -81,7 +81,7 @@ function Login() {
             type="text"
             name="usuario"
             value={usuarios.usuario}
-            placeholder="Digite seu usuario"
+            placeholder="Insira seu usuario"
             onChange={handleChange}
           />
         </div>
@@ -92,7 +92,7 @@ function Login() {
             type="passoword"
             name="senha"
             value={usuarios.senha}
-            placeholder="Digite sua senha"
+            placeholder="Insira sua senha"
             onChange={handleChange}
           />
         </div>

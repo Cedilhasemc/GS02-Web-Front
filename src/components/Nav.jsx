@@ -21,7 +21,7 @@ function Nav() {
 
       {usuarioLogado && (
         <div className="user-info">
-          <p>{`Usuário Logado: ${usuarioLogado.usuario}`}</p>
+          <p>{`Sessão: ${usuarioLogado.usuario}`}</p>
           <button onClick={handleLogout}>Logout</button>
         </div>
       )}
